@@ -1,0 +1,18 @@
+{
+  "name": "Помощник СДО РГСУ",
+  "version": "0.1.1",
+  "permissions": [
+    "tabs", "*://sdo.rgsu.net/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://sdo.rgsu.net/*"],
+    "js": ["sample.js"],
+    "run_at": "document_start"
+  }],
+  "manifest_version": 2
+}
